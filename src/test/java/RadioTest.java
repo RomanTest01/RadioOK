@@ -6,9 +6,10 @@ public class RadioTest {
     Radio volume = new Radio(0, 100);
 
     @Test
-    public void test(){
+    public void test() {
 
     }
+
     @Test
     public void testStation() {
 
@@ -153,7 +154,6 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
 
 
 }

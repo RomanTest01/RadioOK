@@ -33,11 +33,11 @@ public class Radio {
         return increaseVolume;
     }
 
-    public int getMaxVoidRadio(){
-        return  maxVoidRadio;
+    public int getMaxVoidRadio() {
+        return maxVoidRadio;
     }
 
-    public int getMinVoidRadio(){
+    public int getMinVoidRadio() {
         return minVoidRadio;
     }
 
