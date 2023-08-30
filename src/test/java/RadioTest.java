@@ -3,12 +3,13 @@ import org.junit.jupiter.api.Test;
 
 public class RadioTest {
     Radio station = new Radio(9);
-    Radio volume = new Radio(0, 100);
+    Radio volume = new Radio();
 
     @Test
-    public void test(){
+    public void test() {
 
     }
+
     @Test
     public void testStation() {
 
@@ -153,7 +154,6 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
 
 
 }

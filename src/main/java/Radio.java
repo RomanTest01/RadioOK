@@ -8,14 +8,13 @@ public class Radio {
     private int minVoidRadio = 0;
 
 
+    public Radio() {
+        this.lastRadioStation = lastRadioStation;
+    }
+
     public Radio(int lastRadioStation) {
         this.lastRadioStation = lastRadioStation;
 
-    }
-
-    public Radio(int minVoidRadio, int maxVoidRadio) {
-        this.minVoidRadio = minVoidRadio;
-        this.maxVoidRadio = maxVoidRadio;
     }
 
 
@@ -33,11 +32,11 @@ public class Radio {
         return increaseVolume;
     }
 
-    public int getMaxVoidRadio(){
-        return  maxVoidRadio;
+    public int getMaxVoidRadio() {
+        return maxVoidRadio;
     }
 
-    public int getMinVoidRadio(){
+    public int getMinVoidRadio() {
         return minVoidRadio;
     }
 
