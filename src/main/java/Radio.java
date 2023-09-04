@@ -8,7 +8,16 @@ public class Radio {
     private int minVoidRadio = 0;
 
 
-<<<<<<<HEAD
+
+    public Radio() {
+        this.lastRadioStation = 9;
+    }
+
+    public Radio(int stationsCount) {
+        this.lastRadioStation = stationsCount - 1;
+
+    }
+
 
     public Radio() {
         this.lastRadioStation = lastRadioStation;
@@ -16,13 +25,13 @@ public class Radio {
 
     public Radio(int lastRadioStation) {
         this.lastRadioStation = lastRadioStation;
-=======
+
     public Radio() {
             this.lastRadioStation = 9;
         }
     public Radio( int stationsCount){
             this.lastRadioStation = stationsCount - 1;
->>>>>>>flexible
+
 
         }
 
