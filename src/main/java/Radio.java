@@ -1,6 +1,6 @@
 public class Radio {
 
-    private int lastRadioStation = 9;
+    private int lastRadioStation;
     private int currentStation;
     private int increaseVolume;
     private int maxVoidRadio = 100;
@@ -18,22 +18,6 @@ public class Radio {
 
     }
 
-
-    public Radio() {
-        this.lastRadioStation = lastRadioStation;
-    }
-
-    public Radio(int lastRadioStation) {
-        this.lastRadioStation = lastRadioStation;
-
-    public Radio() {
-            this.lastRadioStation = 9;
-        }
-    public Radio( int stationsCount){
-            this.lastRadioStation = stationsCount - 1;
-
-
-        }
 
 
         public int getCurrentStation () {

@@ -2,15 +2,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
-<<<<<<< HEAD
-    Radio station = new Radio(9);
+
+    Radio station = new Radio();
     Radio volume = new Radio();
 
-    @Test
-    public void test() {
-=======
-    Radio station = new Radio();
-    Radio volume = new Radio(0, 100);
+
 
     @Test
     public void test() {
@@ -21,7 +17,6 @@ public class RadioTest {
         int actual = station.getCurrentStation();
 
         Assertions.assertEquals(exepted, actual);
->>>>>>> flexible
 
     }
 
@@ -37,12 +32,6 @@ public class RadioTest {
     }
 
 
-    @Test
-    public void testStation() {
-
-
-        Assertions.assertEquals(9, station.getLastRadioStation());
-    }
 
     @Test
     public void shouldStation() {
@@ -59,8 +48,8 @@ public class RadioTest {
     @Test
     public void shouldMaxStation() {
 
-
         station.setToMaxStation();
+
 
         int expected = 9;
         int actual = station.getLastRadioStation();
