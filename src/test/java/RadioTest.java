@@ -18,6 +18,18 @@ public class RadioTest {
     }
 
     @Test
+    public void testStations() {
+        station.setCurrentStation(8);
+
+        int expexted = 8;
+        int actual = station.getCurrentStation();
+
+        Assertions.assertEquals(expexted, actual);
+
+git status    }
+
+
+    @Test
     public void testStation() {
 
 
