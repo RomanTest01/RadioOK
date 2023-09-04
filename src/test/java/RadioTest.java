@@ -2,11 +2,26 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
+<<<<<<< HEAD
     Radio station = new Radio(9);
     Radio volume = new Radio();
 
     @Test
     public void test() {
+=======
+    Radio station = new Radio();
+    Radio volume = new Radio(0, 100);
+
+    @Test
+    public void test() {
+        Radio station = new Radio(20);
+        station.setCurrentStation(15);
+
+        int exepted = 15;
+        int actual = station.getCurrentStation();
+
+        Assertions.assertEquals(exepted, actual);
+>>>>>>> flexible
 
     }
 

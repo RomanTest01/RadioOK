@@ -8,86 +8,95 @@ public class Radio {
     private int minVoidRadio = 0;
 
 
+<<<<<<<HEAD
+
     public Radio() {
         this.lastRadioStation = lastRadioStation;
     }
 
     public Radio(int lastRadioStation) {
         this.lastRadioStation = lastRadioStation;
+=======
+    public Radio() {
+            this.lastRadioStation = 9;
+        }
+    public Radio( int stationsCount){
+            this.lastRadioStation = stationsCount - 1;
+>>>>>>>flexible
 
-    }
-
-
-    public int getCurrentStation() {
-
-        return currentStation;
-    }
-
-
-    public int getLastRadioStation() {
-        return lastRadioStation;
-    }
-
-    public int getIncreaseVolume() {
-        return increaseVolume;
-    }
-
-    public int getMaxVoidRadio() {
-        return maxVoidRadio;
-    }
-
-    public int getMinVoidRadio() {
-        return minVoidRadio;
-    }
-
-    public void setCurrentStation(int newCurrentStation) {  //выбор станции
-        if (newCurrentStation > lastRadioStation) {
-            newCurrentStation = 0;
         }
 
 
-        currentStation = newCurrentStation;
-    }
+        public int getCurrentStation () {
 
-    public void setNextRadioStation() {   //переключение станции вперед
-        int next = currentStation + 1;
-
-        currentStation = next;
-        if (currentStation > lastRadioStation) {
-            currentStation = 0;
+            return currentStation;
         }
 
-    }
 
-    public void setPrevRadioStation() {  //переключение станции назад
-        int prev = currentStation - 1;
+        public int getLastRadioStation () {
+            return lastRadioStation;
+        }
 
-        currentStation = prev;
-        if (currentStation < 0) {
+        public int getIncreaseVolume () {
+            return increaseVolume;
+        }
+
+        public int getMaxVoidRadio () {
+            return maxVoidRadio;
+        }
+
+        public int getMinVoidRadio () {
+            return minVoidRadio;
+        }
+
+        public void setCurrentStation ( int newCurrentStation){  //выбор станции
+            if (newCurrentStation > lastRadioStation) {
+                newCurrentStation = 0;
+            }
+
+
+            currentStation = newCurrentStation;
+        }
+
+        public void setNextRadioStation () {   //переключение станции вперед
+            int next = currentStation + 1;
+
+            currentStation = next;
+            if (currentStation > lastRadioStation) {
+                currentStation = 0;
+            }
+
+        }
+
+        public void setPrevRadioStation () {  //переключение станции назад
+            int prev = currentStation - 1;
+
+            currentStation = prev;
+            if (currentStation < 0) {
+                currentStation = lastRadioStation;
+            }
+        }
+
+        public void setToMaxStation () {
             currentStation = lastRadioStation;
         }
-    }
-
-    public void setToMaxStation() {
-        currentStation = lastRadioStation;
-    }
 
 
-    public void setIncreaseVolume(int newIncreaseVolume) {  //выбор громкости
-        if (newIncreaseVolume > maxVoidRadio) {
-            newIncreaseVolume = maxVoidRadio;
+        public void setIncreaseVolume ( int newIncreaseVolume){  //выбор громкости
+            if (newIncreaseVolume > maxVoidRadio) {
+                newIncreaseVolume = maxVoidRadio;
+            }
+            if (newIncreaseVolume < minVoidRadio) {
+                newIncreaseVolume = minVoidRadio;
+            }
+
+
+            increaseVolume = newIncreaseVolume;
         }
-        if (newIncreaseVolume < minVoidRadio) {
-            newIncreaseVolume = minVoidRadio;
+
+        public void setMaxVolume () {
+            increaseVolume = maxVoidRadio;
         }
 
 
-        increaseVolume = newIncreaseVolume;
     }
-
-    public void setMaxVolume() {
-        increaseVolume = maxVoidRadio;
-    }
-
-
-}
