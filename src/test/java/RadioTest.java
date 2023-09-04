@@ -26,7 +26,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expexted, actual);
 
-git status    }
+    }
 
 
     @Test
