@@ -8,8 +8,11 @@ public class Radio {
     private int minVoidRadio = 0;
 
 
-    public Radio(int lastRadioStation) {
-        this.lastRadioStation = lastRadioStation;
+    public  Radio(){
+        this.lastRadioStation = 9;
+    }
+    public Radio(int stationsCount) {
+        this.lastRadioStation = stationsCount - 1;
 
     }
 
